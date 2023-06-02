@@ -69,3 +69,6 @@ function solveModifiedEulerMethod() {
     return result;
   }
   
+function clearEquation() {
+   document.getElementById('equation').value = '';
+}

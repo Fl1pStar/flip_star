@@ -95,20 +95,22 @@
     <div class="container">
       
         <h1>Метод Эйлера(мод)</h1>
-        <label for="equation">Уравнение:</label>
+        <h2>Элементы: cos(), sin(), ^2, *, /</h2>
+        <h3><label for="equation">Уравнение:</label></h3>
         <input type="text" id="equation" value="x^2 + 3*y"><br>
-        <label for="start">Начало интервала:</label>
+        <button class="link" onclick="clearEquation()">Очистить</button>
+        <h3><label for="start">Начало интервала:</label></h3>
         <input type="number" id="start" value="0"><br>
-        <label for="end">Конец интервала:</label>
+        <h3><label for="end">Конец интервала:</label></h3>
         <input type="number" id="end" value="2"><br>
-        <label for="step">Шаг (h):</label>
+        <h3><label for="step">Шаг (h):</label></h3>
         <input type="number" id="step" value="0.1"><br>
-        <label for="initialX">X0:</label>
+        <h3><label for="initialX">X0:</label></h3>
         <input type="number" id="initialX" value="0"><br>
-        <label for="initialY">Y0:</label>
+        <h3><label for="initialY">Y0:</label></h3>
         <input type="number" id="initialY" value="1"><br>
         <button class="link" onclick="solveModifiedEulerMethod()">Решить</button>
-        <table link id="resultTable">
+        <table  id="resultTable">
           <tr>
             <th>i</th>
             <th>X</th>
