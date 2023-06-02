@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="none" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Star</title>
+
+  <meta name="theme-color" content="#000000">
+
+  <meta name="description" content="FlipStar Mods for Radmir and Hassel Online">
+  <!-- <meta name="robots" content="index, follow"> -->
+  <meta name="keywords" content="FlipStar">
+
+  <meta name="application-name" content="FlipStar">
+  <meta property="og:url" content="https://fl1pstar.github.io/FlipStar/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FlipStar">
+  <meta property="og:description" content="FlipStar Mods for Radmir and Hassel Online">
+  <meta property="og:image" content="https://fl1pstar.github.io/FlipStar/assets/images/icon/favicon-120.png">
+  <meta property="og:site_name" content="FlipStar">
+  <!-- icon -->
+  <link type="image/x-icon" rel="shortcut icon" href="../../assets/images/icon/favicon.ico">
+  <link type="image/png" sizes="16x16" rel="icon" href="../../assets/images/icon/favicon.png">
+  <link type="image/png" sizes="32x32" rel="icon" href="../../assets/images/icon/favicon-32.png">
+  <link type="image/png" sizes="96x96" rel="icon" href="../../assets/images/icon/favicon-96.png">
+  <link type="image/png" sizes="120x120" rel="icon" href="../../assets/images/icon/favicon-120.png">
+  <!-- fonts -->
+  <link rel="preload" href="../../assets/fonts/source-sans-pro-400.woff2" as="font" crossorigin>
+  <link rel="preload" href="../../assets/fonts/source-sans-pro-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="../../assets/fonts/source-sans-pro-700.woff2" as="font" crossorigin>
+  <!-- css  -->
+  <link rel="stylesheet" href="../../assets/css/vendor.css">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <!-- js -->
+  <script defer src="../../assets/js/vendor.js"></script>
+  <script defer src="../../assets/js/app.js"></script>
+  <script src="../../assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo link" href="index.html">
+        <svg class="icon">
+          <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="list">
+          <li class="item">
+            <a class="link" target="_blank" href="https://www.youtube.com/channel/UCCSbQaLe9eglMwhoMG6wksQ">
+              <svg class="icon">
+                <use xlink:href="../../assets/images/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" target="_blank" href="https://vk.com/flip_star_mods">
+              <svg class="icon">
+                <use xlink:href="../../assets/images/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" target="_blank" href="https://vm.tiktok.com/ZSeBpSu6D/">
+              <svg class="icon">
+                <use xlink:href="../../assets/images/sprite.svg#tiktok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" target="_blank" href="https://t.me/fl1p_star">
+              <svg class="icon">
+                <use xlink:href="../../assets/images/sprite.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item">
+            <a class="link" target="_blank" href="Нету">
+              <svg class="icon">
+                <use xlink:href="../../assets/images/sprite.svg#discord"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      
+        <h1>Метод Эйлера(мод)</h1>
+        <label for="equation">Уравнение:</label>
+        <input type="text" id="equation" value="x^2 + 3*y"><br>
+        <label for="start">Начало интервала:</label>
+        <input type="number" id="start" value="0"><br>
+        <label for="end">Конец интервала:</label>
+        <input type="number" id="end" value="2"><br>
+        <label for="step">Шаг (h):</label>
+        <input type="number" id="step" value="0.1"><br>
+        <label for="initialX">X0:</label>
+        <input type="number" id="initialX" value="0"><br>
+        <label for="initialY">Y0:</label>
+        <input type="number" id="initialY" value="1"><br>
+        <button class="link" onclick="solveModifiedEulerMethod()">Решить</button>
+        <table link id="resultTable">
+          <tr>
+            <th>i</th>
+            <th>X</th>
+            <th>Y</th>
+          </tr>
+        </table>      
+
+    </div>
+  </section>
+</body>
+
+</html>
